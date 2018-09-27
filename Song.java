@@ -3,7 +3,8 @@ public class Song
 {
     private int rating;
     private String title;
-    private Float price;
+    private double price;
+    private boolean favorite;
     
     public Song()
     {
@@ -17,6 +18,16 @@ public class Song
     public String getTitle() {
         return title;
     }
-    public Float 
-
+    public void setPrice(double p){
+        price =p;
+    }
+    public double getPrice(){
+        return price;
+    }
+    public void setFavorite(boolean f){
+        favorite =f;
+    }
+    public boolean getFavorite(){
+        return favorite;
+    }
 }
