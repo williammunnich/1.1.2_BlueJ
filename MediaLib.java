@@ -19,7 +19,8 @@ public class MediaLib
      System.out.println(book.getTitle());
      System.out.println(movie.getTitle());
      System.out.println(song.getFavorite());
-     
+     Song song2 = new Song("yellow", 3.30, true, 4 );
+     System.out.println(song2.getTitle());
     }
 }
 

@@ -14,4 +14,6 @@ comment6.params=f
 comment6.target=void\ setFavorite(boolean)
 comment7.params=
 comment7.target=boolean\ getFavorite()
-numComments=8
+comment8.params=title\ price\ favorite\ rating
+comment8.target=Song(java.lang.String,\ double,\ boolean,\ double)
+numComments=9

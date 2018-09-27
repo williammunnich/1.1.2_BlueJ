@@ -11,6 +11,7 @@ public class Song
         rating = 0;
         title = "";
         price = 0.0;
+        favorite = false;
     }
     public void setTitle(String t) {
         title =t;
@@ -30,4 +31,11 @@ public class Song
     public boolean getFavorite(){
         return favorite;
     }
+    public Song(String title,double price,boolean favorite, double rating) {
+        title =title;
+        price =price;
+        favorite =favorite;
+        rating =rating;
+    }
+    
 }
