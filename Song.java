@@ -13,29 +13,25 @@ public class Song
         price = 0.0;
         favorite = false;
     }
-    public void setTitle(String t) {
-        title =t;
-    }
-    public String getTitle() {
-        return title;
-    }
-    public void setPrice(double p){
-        price =p;
-    }
-    public double getPrice(){
-        return price;
-    }
-    public void setFavorite(boolean f){
-        favorite =f;
-    }
-    public boolean getFavorite(){
-        return favorite;
-    }
+    
+    
     public Song(String title,double price,boolean favorite, double rating) {
         title =title;
         price =price;
         favorite =favorite;
         rating =rating;
     }
-    
+    public String getTitle() {
+        return title;
+    }
+    public double getPrice(){
+        return price;
+    }
+    public boolean getFavorite(){
+        return favorite;
+    }
+    public double getRating(){
+        return rating;
+    }
+    //public getSong();{}
 }
