@@ -6,6 +6,7 @@ public class Song
     private double price;
     private boolean favorite;
     
+    
     public Song()
     {
         rating = 0;
@@ -13,13 +14,12 @@ public class Song
         price = 0.0;
         favorite = false;
     }
-    
-    
-    public Song(String title,double price,boolean favorite, double rating) {
-        title =title;
-        price =price;
-        favorite =favorite;
-        rating =rating;
+    public Song(String title,double price,int rating, boolean favorite ) {
+        
+        this.title =title;
+        this.price =price;
+        this.favorite =favorite;
+        this.rating =rating;
     }
     public String getTitle() {
         return title;

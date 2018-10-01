@@ -2,8 +2,8 @@
 comment0.target=Song
 comment1.params=
 comment1.target=Song()
-comment2.params=title\ price\ favorite\ rating
-comment2.target=Song(java.lang.String,\ double,\ boolean,\ double)
+comment2.params=title\ price\ rating\ favorite
+comment2.target=Song(java.lang.String,\ double,\ int,\ boolean)
 comment3.params=
 comment3.target=java.lang.String\ getTitle()
 comment4.params=
