@@ -51,8 +51,7 @@ public class Movie
         return duration;
     }
     public double gethoursDuration(int x){
-        hours = x;
-        hours = (duration - (duration%60))/60;
+        hours = (x - (x%60))/60;
         System.out.println("hours");
         return hours;
     }

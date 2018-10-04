@@ -29,7 +29,7 @@ public class MediaLib
      Song song3 = new Song("green", 3.30, 9, true );
      numSongs += 1;
      book.setTitle("Hunger games");
-     Movie movie1 = new Movie("hunger", 3.30, 4, false, 120 );
+     Movie movie1 = new Movie("hunger", 3.30, 4, false, 130 );
      //System.out.println(song.getPrice());
      //System.out.println(book.getTitle());
      //System.out.println(movie.getTitle());
@@ -46,11 +46,11 @@ public class MediaLib
      System.out.println("cost all songs:");
      //System.out.println(average);
      System.out.println(movie1.getTitle());
-     duration = movie1.getDuration();
-     minutes= (duration%60);
-     hours = (duration - (duration%60))/60;
-     System.out.println(minutes);
-     System.out.println(hours);
+     //duration = movie1.getDuration();
+     //minutes= (duration%60);
+     //hours = (duration - (duration%60))/60;
+     System.out.println();
+     System.out.println(movie1.gethoursDuration(130));
     }
 }
 
