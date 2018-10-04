@@ -1,11 +1,16 @@
 
 public class MediaLib
 {
+    public  int duration;
     public double totalCost;
     public int numSongs;
     public static double testVal = 0.0;
     public String totalRatings = "";
     public double average = 0.0;
+    
+    public int hours;
+    public int minutes;
+    
     public static void main(){
      System.out.println("\f");
      System.out.println("Welcome to your Media Libray");
@@ -40,8 +45,12 @@ public class MediaLib
      //average = testVal;
      System.out.println("cost all songs:");
      //System.out.println(average);
-     System.out.println(movie1.getminutesDuration());
-     System.out.println(movie1.gethoursDuration());
+     System.out.println(movie1.getTitle());
+     duration = movie1.getDuration();
+     minutes= (duration%60);
+     hours = (duration - (duration%60))/60;
+     System.out.println(minutes);
+     System.out.println(hours);
     }
 }
 

@@ -47,14 +47,21 @@ public class Movie
     public double getRating(){
         return rating;
     }
-    public double gethoursDuration(){
-        int hours = (duration - (duration%60))/60;
+    public int getDuration(){
+        return duration;
+    }
+    public double gethoursDuration(int x){
+        hours = x;
+        hours = (duration - (duration%60))/60;
         System.out.println("hours");
         return hours;
     }
-     public double getminutesDuration(){
-        int minutes = (duration%60);
+     public double getminutesDuration(int x){
+        minutes = (duration%60);
         System.out.println("minutes");
+        System.out.println(minutes);
         return minutes;
+        
+        
     }
 }

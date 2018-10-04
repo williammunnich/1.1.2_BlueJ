@@ -1,10 +1,10 @@
 
 public class Song
 {
-    private int rating;
-    private String title;
-    private double price;
-    private boolean favorite;
+    public int rating;
+    public String title;
+    public double price;
+    public boolean favorite;
     
     
     public Song()
