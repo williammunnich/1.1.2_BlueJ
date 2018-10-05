@@ -27,7 +27,7 @@ public class Movie
         minutes = 0;
         
     }
-    public Movie(String title,double price,int rating, boolean favorite, int duaration ) {
+    public Movie(String title,double price,int rating, boolean favorite, int duration ) {
         
         this.title =title;
         this.price =price;
@@ -36,6 +36,7 @@ public class Movie
         this.duration =duration;
     }
     public String getTitle() {
+        System.out.println("movie title");
         return title;
     }
     public double getPrice(){
@@ -50,15 +51,14 @@ public class Movie
     public int getDuration(){
         return duration;
     }
-    public double gethoursDuration(int x){
-        hours = (x - (x%60))/60;
+    public double gethoursDuration(){
+        hours = (duration - (duration%60))/60;
         System.out.println("hours");
         return hours;
     }
-     public double getminutesDuration(int x){
+     public double getminutesDuration(){
         minutes = (duration%60);
         System.out.println("minutes");
-        System.out.println(minutes);
         return minutes;
         
         
